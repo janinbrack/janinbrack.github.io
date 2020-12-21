@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+    
+
+<head>
+<meta charset="utf-8">
+<title>blogs</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- pc common css -->
+<link rel="stylesheet" type="text/css" href="Common.css" media="screen and (min-width:768px)">
+<link rel="stylesheet" type="text/css" href="blogs_pc.css" media="screen and (min-width:768px)">
+
+<!-- phone  -->
+<link rel="stylesheet" type="text/css" href="blogs_phone.css" media="screen and (max-width:767px)">
+
+
+<!-- google font -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+
+
+<!-- jquery  cdn-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+
+<input type="checkbox" id="check">
+<label for="check" id="check_btn"></label>
+
+
+
+
+<div class="wrap">
+
+<nav id="anav">
+    <div id="menu">
+           <ul>
+            <li><a href="index.html">About</a></li>
+            <li><a href="blogs.html">Blogs</a></li>
+            <li><a href="Portfolio.html">Portfolio</a></li>
+            <li><a href="skill.html">Skill</a></li>
+            <li><a href="experience.html">Experience</a></li>
+           </ul>
+
+    </div><!-- menu -->
+
+
+</nav>
+
+
+
+
+
+<!-- --------------header ------------------ -->
+<header>
+   
+   <div class="headbox">
+
+    <div class="blogstitle">
+        <h2>Blogs</h2>
+        
+        
+    </div>
+
+
+
+
+   
+
+
+
+
+
+
+
+
+    
+
+<!-- ------------    -demo  ----------- -->
+
+
+
+
+
+
+
+
+
+
+<!-- ------------    -demo_1  ----------- -->
+    
+    <h3>menu use Jquery slideToggle() 單階</h3><br>
+    <p>slideToggle( 數值(時間單位為毫秒) | "slow" | "fast" )</p><br>
+   <div class="blogsDemobox">
+     menu
+     
+   </div><!-- blogsDemobox -->
+   <div id="Menuslide">
+    <ul>
+      <li><a href="#">OPTION1</a></li>
+      <li><a href="#">OPTION2</a></li>
+      <li><a href="#">OPTION3</a></li>
+
+    </ul>
+</div><!-- Menuslide -->
+
+<script>
+    $(".blogsDemobox").click(function(){
+  $("#Menuslide").slideToggle("500");
+});
+</script>
+
+
+
+
+
+
+
+<br><br>
+<!-- ------------    -demo_2  ----------- -->
+
+<h3>menu use Jquery slideToggle() 多階</h3><br>
+    <p>slideToggle( 數值(時間單位為毫秒) | "slow" | "fast" )</p><br>
+    <p>
+    <ol>
+        <li>1. 使用多階層DIV區塊元素，而非 list 或超連結。</li>
+        <li>2. 在未點擊菜單前，所有項目必須隱藏。</li>
+        <li>3. 按照點擊之項目，顯示區塊元素。</li>
+
+    </ol>
+
+    </p><br><br>
+
+
+   <div class="blogsDemobox_two">
+     menu
+
+
+
+    </div><!-- blogsDemobox -->
+    <div id="Menuslide_two">
+     
+       <div id="op_one">JAVA</div>
+                <div id="op_one_item">
+                    <a href="#">JDBC</a>
+                    <a href="#">DAO</a>
+                    <a href="#">Spring</a>
+                </div><!-- op_one_item -->
+       
+       
+        <div id="op_two">SQL</div>
+                <div id="op_two_item">
+                    <a href="#">insert into</a>
+                    <a href="#">update</a>
+                    <a href="#">Delete</a>
+                </div><!-- op_one_item -->
+
+
+       <div id="op_three">HTML</div>
+                <div id="op_three_item">
+                    <a href="#">div</a>
+                    <a href="#">img</a>
+                    <a href="#">li</a>
+                </div><!-- op_one_item -->
+ 
+     </ul>
+ </div><!-- Menuslide -->
+ 
+ <script>
+
+   $("#Menuslide_two").css("display","none");
+
+
+
+   $(".blogsDemobox_two").click(function(){
+  $("#Menuslide_two").slideToggle();
+  
+    });
+
+
+    $("#op_one").click(function(){
+        $("#op_one_item").slideToggle();
+
+    });
+
+    $("#op_two").click(function(){
+        $("#op_two_item").slideToggle();
+
+    });
+
+    $("#op_three").click(function(){
+        $("#op_three_item").slideToggle();
+
+    });
+   
+
+
+
+ </script>
+
+
+
+
+
+
+
+
+
+<br><br>
+<!-- ------------    -demo_3  ----------- -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   </div><!-- headbox -->
+   
+   
+
+    
+</header>   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer>
+
+
+    <div class="box">
+
+        <a href="#"><div class="gh"></div></a>
+
+        
+
+
+
+        <div class="fot_text">
+            <h2>That the wisdom of the head, like the spark in the flint, don't go to play it is not out.— W. William Shakespeare</h2>
+        </div>
+     
+     
+         <div class="fot">
+            <a href="#"><img src="images/ICON/facebook (1).png"></a>
+            <a href="#"><img src="images/ICON/instagram (1).png"></a>
+            <a href="#"><img src="images/ICON/twitter (1).png"></a>
+            <a href="#"><img src="images/ICON/tiktok (1).png"></a>
+     
+         </div>
+
+
+    </div><!-- box -->
+
+  
+
+
+
+
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div><!-- wrap -->  
+
+
+
+
+
+
+
+
+
+</body>
+
+
+</html>
