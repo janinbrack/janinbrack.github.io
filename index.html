@@ -22,6 +22,63 @@
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap" rel="stylesheet">
 
 
+
+
+
+<script src="https://www.gstatic.com/charts/loader.js"></script>
+<!-- google chart js來源 -->
+
+
+
+
+<script>
+
+  //current 這個參數表示目前最新版本
+  //corechart 預設包含 條形圖，列，線，面積，階梯區域，氣泡，派，甜甜圈，組合，燭台，直方圖，散點圖
+  
+  google.charts.load('current', {packages: ['corechart']});
+  google.charts.setOnLoadCallback(drawChart);
+
+  function drawChart() {
+    // Define the chart to be drawn.
+
+    //ref :https://developers.google.com/chart/interactive/docs/basic_preparing_data
+    //DataTable預設是一個二維陣列
+
+    var data = new google.visualization.DataTable();
+    data.addColumn('string', 'Element');  
+    data.addColumn('number', 'Percentage');
+    data.addRows([
+      ['幽默', 1],
+      ['大方', 2],
+      ['獨立思考', 3]
+    ]);
+
+
+//可宣告配置 而屬性選想請參考:https://developers.google.com/chart/interactive/docs/gallery/piechart#Configuration_Options
+
+var options = {
+
+'title':'Google Chart Demo',
+
+}
+
+
+
+var barchart_options = {title:'Google Chart Demo',
+                       legend: 'none'};
+
+
+    
+    // Instantiate and draw the chart.
+    var chart = new google.visualization.PieChart(document.getElementById('google_chart1'));
+    chart.draw(data, options);
+
+    var barchart = new google.visualization.BarChart(document.getElementById('google_chart2'));
+        barchart.draw(data, barchart_options);
+  }
+</script>
+
 </head>
 
 <body>
@@ -109,41 +166,22 @@
 
 <article>
 
-        <div class="artcontent">
-
-            <div class="arttitle">
-                <h2>I like pop Art </h2>
-            </div>
-
-
-            <div class="artimg">
-                <div class="artimgbox"> <img src="images/pop1.jpg" ></div>
-                <div class="artimgbox"><img src="images/pop2.jpg"></div>
-                <div class="artimgbox"><img src="images/pop3.jpg"></div>
-                <div class="artimgbox"><img src="images/pop4.jpg"></div>
-
-
-               
-                
-                
-                
-            </div>
-
-
-
-
-
-
-
-
-
-        </div><!-- artcontent -->
+     
 
 
 
 
 
 </article>
+
+
+<div id="google_chart1">
+</div>
+<div id="google_chart2">
+</div>
+
+
+
 
 
 

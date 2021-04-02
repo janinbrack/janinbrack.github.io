@@ -140,61 +140,41 @@ header{
 
 /*********    article  ************/
 
-article{
-    width: 100%;
-    position: relative;
-    top: 0px;
-    padding: 150px 0px;
 
-}
-
-.artcontent{
-    width: 80%;
-    margin: auto;
- 
-}
-
-
-
-
-
-
-
-.arttitle{
-    width: 100%;
-    height: 100px;
-    line-height: 100px;
-
-    
-}
-
-.arttitle h2{
-    color: #5D737E;
-}
-
-.artimg {
-    width: 100%;
-    margin: auto;
-    display: flex;
-}
-
-.artimg .artimgbox{
-    width: 20%;
-    margin:auto;
-   }
-
-
-
-
-.artimg img {
-width: 100%;
-
-
-
-}
 
 
 /************  brfore article  ************/
+
+
+
+
+
+/*   google_chart   **/
+#google_chart1{
+    position: relative;
+    width: 80%;
+    height: 350px;
+    margin: auto;
+    margin-top: 100px;
+  
+   
+   
+}
+
+#google_chart2{
+    position: relative;
+    width: 80%;
+    height: 300px;
+    margin: auto;
+   
+   
+}
+
+
+
+
+
+
 
 
 
