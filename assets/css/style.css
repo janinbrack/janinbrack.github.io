@@ -987,11 +987,22 @@ p {
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .work-area {
     padding-top: 90px;
-    padding-bottom: 100px; } }
+    padding-bottom: 100px; }
+   }
 @media (max-width: 767px) {
   .work-area {
     padding-top: 70px;
-    padding-bottom: 80px; } }
+    padding-bottom: 80px; } 
+  }
+
+  #writing{
+    width: 80%;
+    margin: auto;
+    padding: 150px 0px;
+  }
+
+
+
 
 .single-work {
   position: relative; }
