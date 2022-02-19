@@ -162,7 +162,7 @@ p {
 /*===== All Section Title Style =====*/
 .section-title .title {
   font-weight: 700;
-  font-size: 45px;
+  font-size: 30px;
   color: #000;
   padding-bottom: 20px; }
   @media (max-width: 767px) {
@@ -735,7 +735,11 @@ p {
     background-color: #754ef9;
     left: 0;
     bottom: 58px;
-    z-index: 11; }
+    z-index: 11;
+    display: none;
+  }
+
+
   .header-image img {
     position: relative;
     z-index: 5; }
@@ -1255,6 +1259,8 @@ p {
 .contact-box {
   background-color: #fff;
   border: 1px solid #ddd;
+  height: 300px;
+  
   padding: 30px 35px;
   -webkit-transition: all 0.3s ease-out 0s;
   -moz-transition: all 0.3s ease-out 0s;
