@@ -1,0 +1,449 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <!-- 下載檔案，採用本地端的方式來使用Bootstrap -->
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="bootstrap-5.1.3-dist/css/bootstrap.min.css">
+  <!-- Bootstrap js -->
+  <script src="bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
+  <!-- Bootstrap popper 可以參考官網上的樣板，它是第三方資源，所以bootstrap本身並沒有提供檔案下載。
+    這邊是複製網址，將檔案下載至本地端。
+    -->
+  <script src="bootstrap-5.1.3-dist/js/popper.min.js"></script>
+
+
+
+
+  <!-- 自訂義css -->
+  <!-- reset -->
+  <link rel="stylesheet" href="css/reset.css">
+  <!-- common -->
+  <link rel="stylesheet" href="css/common.css">
+  <!-- nav -->
+  <link rel="stylesheet" href="css/nav.css">
+  <!-- header -->
+  <link rel="stylesheet" href="css/header.css">
+  <!-- article -->
+  <link rel="stylesheet" href="css/article.css">
+  <!-- section -->
+  <link rel="stylesheet" href="css/section.css">
+  <!-- aside -->
+  <link rel="stylesheet" href="css/aside.css">
+  <!-- footer -->
+  <link rel="stylesheet" href="css/footer.css">
+
+
+  <script src="js/test.js"></script>
+  <title>CoolShop</title>
+
+
+
+</head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<body>
+
+  <!---------------------------- nav ---------------------------->
+  <nav class="container-fluid nav_class background_main_color">
+
+
+
+
+
+    <!-- 選單按鈕 -->
+    <a class="nav_btn" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+      aria-controls="offcanvasExample">
+      <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-list"
+        viewBox="0 0 16 16" style="color: aliceblue;">
+        <path fill-rule="evenodd"
+          d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+      </svg>
+    </a>
+
+
+    <div class="company">
+      <h1 class="h1 font_White_color ">Cool Shop</h1>
+    </div>
+
+
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-header background_main_color">
+        <p class="h1 font_White_color coolshoptitlt">Cool shop</p>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+
+
+
+      <div class="offcanvas-body">
+        <div class="nav_list_item">
+          <ul>
+            <a href="#" class="font_back_color">
+              <li>最新商品</li>
+            </a>
+
+            <a href="#" class="font_back_color">
+              <li>優惠活動</li>
+            </a>
+            <a href="#" class="font_back_color">
+              <li>時尚美妝</li>
+            </a>
+            <a href="#" class="font_back_color">
+              <li>關於我們</li>
+            </a>
+            <a href="#" class="font_back_color">
+              <li>會員中心
+              </li>
+            </a>
+
+
+
+
+          </ul>
+
+        </div>
+      </div><!-- offcanvas-body -->
+    </div>
+
+
+  </nav>
+
+  <!---------------------------- nav ---------------------------->
+
+
+
+
+  <!---------------------------- header ---------------------------->
+  <header class="container-fluid">
+    <div class="row header_row">
+
+
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/mackup_1_960_540.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/mackup_2_960_540.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/mackup_3_960_540.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
+
+
+    </div>
+
+  </header>
+
+
+
+  <!---------------------------- header ---------------------------->
+
+
+
+
+
+
+
+  <!---------------------------- article ---------------------------->
+  <article class="container-fluid">
+    <div class="row article_row">
+
+
+
+      <div class="col-10 col-sm-10 col-md-3 col-lg-3">
+
+        <div class="card">
+          <img src="images/AnyConv.com__art_1.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Christophe Robin </h5>
+            <p class="card-text">Cleansing Purifying Scrub with Sea Salt 250ml</p>
+
+
+            <button class="btn btn-primary cardbtn" onclick="addshop()" value="ChristopheRobin_250m">加入購物車
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+
+
+
+
+
+
+
+      <div class="col-10 col-sm-10 col-md-3 col-lg-3">
+        <a href="#">
+          <div class="card">
+            <img src="images/AnyConv.com__art_3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Rimmel Wonder'Extension</h5>
+              <p class="card-text">Mascara (Various Shades)</p>
+
+              <button class="btn btn-primary cardbtn" onclick="">加入購物車
+              </button>
+            </div>
+          </div>
+        </a>
+      </div>
+
+
+
+
+
+      <div class="col-10 col-sm-10 col-md-3 col-lg-3">
+        <a href="#">
+          <div class="card">
+            <img src="images/AnyConv.com__art_2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Christophe Robin</h5>
+              <p class="card-text"> Regenerating Mask with Prickly Pear Oil 250ml</p>
+
+              <button class="btn btn-primary cardbtn" onclick="">加入購物車
+              </button>
+            </div>
+          </div>
+        </a>
+      </div>
+
+
+
+
+    </div><!-- row -->
+
+
+
+    </div>
+  </article>
+
+
+
+  <!---------------------------- article ---------------------------->
+
+
+
+
+
+  <!---------------------------- section ---------------------------->
+  <section class="container">
+    <div class="row section_row">
+
+      <div class="col-10 col-sm-10 col-md-12 col-lg-8 section_col">
+        <img src="images/section_img.jpg" alt="" class="img-fluid" id="selectimg">
+      </div>
+
+
+
+      <div class="col-10 col-sm-10 col-md-8 col-lg-8 section_col">
+        <div class="textbox background_third_color">
+          <h3 class="h3">夏季優惠!滿2500送300</h3>
+          <p>
+            Collect all of best-selling red and pink Velour Liquid Lipsticks with this set of pint-sized minis. Perfect
+            for travel, these tiny tubes glide on smoothly, leaving behind bold, full-coverage color that dries to a
+            comfortable and completely matte finish.
+          </p>
+
+          <a class="sectionbutton" href="#">前往購買</a>
+        </div>
+      </div>
+
+
+
+
+
+    </div><!-- row -->
+
+  </section>
+
+
+  <!---------------------------- section ---------------------------->
+
+
+
+
+
+
+
+  <!---------------------------- aside ---------------------------->
+  <aside class="container-fluid">
+    <div class="row asrow">
+
+      <div class="col-8 col-sm-8 col-md-8 col-lg-10 adbanner background_second_color">
+        <h3 class="h3">限時加入會員</h3>
+        <p>現在加入會員，立即享有每月150元折扣金</p>
+      </div>
+
+
+      <div class="col-4 col-sm-4 col-md-8 col-lg-10 adbannercircle background_main_color">
+        <button class="addbeannerbtn">點選加入</button>
+      </div>
+
+
+    </div>
+
+
+
+    <div class="row asrow">
+
+      <div class="col-12 col-sm-12 col-md-8 col-lg-10 bannerback">
+      </div>
+    </div>
+
+
+
+    </div>
+
+
+  </aside>
+
+  <!---------------------------- aside ---------------------------->
+
+
+
+
+
+
+
+
+
+
+
+  <!---------------------------- footer ---------------------------->
+
+  <footer class="container-fluid">
+    <div class="row foorow">
+
+
+      <div class="col-12 col-sm-12 col-md-8 col-lg-8 fot">
+
+        <ul>
+
+          <a href="#">
+            <li>條款和條件</li>
+          </a>
+          <a href="#">
+            <li>商品配送</li>
+          </a>
+          <a href="#">
+            <li>隱私權聲明</li>
+          </a>
+          <a href="#">
+            <li>聯繫我們</li>
+          </a>
+          <a href="#">
+            <li>客服中心</li>
+          </a>
+          <a href="#">
+            <li>Cookie 條款</li>
+          </a>
+          <a href="#">
+            <li>copyright © bowen</li>
+          </a>
+
+        </ul>
+      </div>
+
+
+
+
+
+      <div class="col-12 col-sm-12 col-md-4 col-lg-4 foo">
+
+        <ul>
+          <a href="#" class="ahov">
+            <li><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                class="bi bi-facebook" viewBox="0 0 16 16">
+                <path
+                  d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+              </svg></li>
+          </a>
+
+
+          <a href="#">
+
+          </a>
+
+
+          <a href="#" class="ahov">
+            <li><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                class="bi bi-instagram" viewBox="0 0 16 16">
+                <path
+                  d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+              </svg></li>
+          </a>
+
+
+          <a href="#" class="ahov">
+            <li><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-line"
+                viewBox="0 0 16 16">
+                <path
+                  d="M8 0c4.411 0 8 2.912 8 6.492 0 1.433-.555 2.723-1.715 3.994-1.678 1.932-5.431 4.285-6.285 4.645-.83.35-.734-.197-.696-.413l.003-.018.114-.685c.027-.204.055-.521-.026-.723-.09-.223-.444-.339-.704-.395C2.846 12.39 0 9.701 0 6.492 0 2.912 3.59 0 8 0ZM5.022 7.686H3.497V4.918a.156.156 0 0 0-.155-.156H2.78a.156.156 0 0 0-.156.156v3.486c0 .041.017.08.044.107v.001l.002.002.002.002a.154.154 0 0 0 .108.043h2.242c.086 0 .155-.07.155-.156v-.56a.156.156 0 0 0-.155-.157Zm.791-2.924a.156.156 0 0 0-.156.156v3.486c0 .086.07.155.156.155h.562c.086 0 .155-.07.155-.155V4.918a.156.156 0 0 0-.155-.156h-.562Zm3.863 0a.156.156 0 0 0-.156.156v2.07L7.923 4.832a.17.17 0 0 0-.013-.015v-.001a.139.139 0 0 0-.01-.01l-.003-.003a.092.092 0 0 0-.011-.009h-.001L7.88 4.79l-.003-.002a.029.029 0 0 0-.005-.003l-.008-.005h-.002l-.003-.002-.01-.004-.004-.002a.093.093 0 0 0-.01-.003h-.002l-.003-.001-.009-.002h-.006l-.003-.001h-.004l-.002-.001h-.574a.156.156 0 0 0-.156.155v3.486c0 .086.07.155.156.155h.56c.087 0 .157-.07.157-.155v-2.07l1.6 2.16a.154.154 0 0 0 .039.038l.001.001.01.006.004.002a.066.066 0 0 0 .008.004l.007.003.005.002a.168.168 0 0 0 .01.003h.003a.155.155 0 0 0 .04.006h.56c.087 0 .157-.07.157-.155V4.918a.156.156 0 0 0-.156-.156h-.561Zm3.815.717v-.56a.156.156 0 0 0-.155-.157h-2.242a.155.155 0 0 0-.108.044h-.001l-.001.002-.002.003a.155.155 0 0 0-.044.107v3.486c0 .041.017.08.044.107l.002.003.002.002a.155.155 0 0 0 .108.043h2.242c.086 0 .155-.07.155-.156v-.56a.156.156 0 0 0-.155-.157H11.81v-.589h1.525c.086 0 .155-.07.155-.156v-.56a.156.156 0 0 0-.155-.157H11.81v-.589h1.525c.086 0 .155-.07.155-.156Z" />
+              </svg></li>
+          </a>
+
+
+
+
+
+        </ul>
+      </div>
+
+    </div>
+
+
+
+  </footer>
+
+  <!---------------------------- footer ---------------------------->
+
+
+
+
+
+</body>
+
+
+</html>

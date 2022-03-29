@@ -1,0 +1,46 @@
+/********網站配色_字形、字體、超連結********/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Open+Sans&display=swap');
+
+body{
+font-family: 'Lato', sans-serif;
+font-family: 'Noto Sans TC', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-weight: 500;
+position: relative;
+}
+
+a{
+text-decoration: none;	
+color:#696969;
+}
+a:hover{
+color:#696969;
+}
+
+
+
+
+
+/********網站配色_背景********/
+.background_main_color{
+background-color: #ECD4D4;
+
+}
+.background_second_color{
+	background-color: #D5E6ED;
+	
+}
+.background_third_color{
+	background-color: #EFEFF1;
+}
+
+
+
+/********網站配色_文字********/
+.font_back_color{
+	color:#696969;
+}
+
+.font_White_color{
+	color:#fff;
+}

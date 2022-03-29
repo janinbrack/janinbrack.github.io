@@ -1,0 +1,63 @@
+section{
+position: relative;
+padding-bottom: 20px;
+margin-bottom: 50px;
+}
+
+
+.section_row{
+    position: relative;
+    padding: 80px 0px;
+}
+
+
+.section_col:nth-child(2){
+    position: absolute;
+    top: 100px;
+    right: 20px;
+    padding: 50px 0px;
+
+}
+
+
+#selectimg{
+    transform:scaleX(-1);
+    
+}
+
+.textbox{
+position: relative;
+display: inline-flex;
+line-height:1.5;
+flex-direction: column;
+padding: 30px 12px;
+
+}
+.textbox h2{
+    text-align: center;
+    
+}
+.textbox p{
+    padding-bottom: 20px;
+   margin-bottom: 20px;
+}
+.sectionbutton {
+   position: absolute;
+   right: 10px;
+   bottom: 12px;
+   width: 100px;
+   height: 40px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 5px;
+   background: #f0bbe5;
+   color: #ffffff;
+    
+}
+.sectionbutton:hover {
+   background: #d15cbc;
+   color: #fff;
+   text-decoration: none;
+}
+  

@@ -1,0 +1,17 @@
+header{
+    position: relative;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.header_row{
+   width: 90%;
+}
+
+@media only screen and (max-width: 768px) {
+    .header_row{
+        width: 100%;
+     }
+
+}
