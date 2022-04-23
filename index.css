@@ -43,6 +43,9 @@
     position: absolute;
     top:30px;
     left: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .nav_panel{
@@ -52,11 +55,11 @@
 
 
 }
-
 .navbt{
-    width: 100%;
-    height: 100%;
+    width: 35px;
+    height: 35px;
 }
+
 
 
 
@@ -89,7 +92,7 @@ line-height: 1.5;
     justify-content: center;
 }
 .section_col{
-   height: 350px;
+   height: 380px;
    background-image: url("/images/富士山.jpg");
    background-repeat: no-repeat;
    background-size:cover;
