@@ -2,543 +2,215 @@
 <html lang="en">
 
 <head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!--====== Required meta tags ======-->
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-    <!--====== Title ======-->
-    <title>Chien Hung</title>
+  <!-- jquery cdn -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
+  <!-- reset -->
+  <link rel="stylesheet" href="reset.css">
 
+  <!-- index.css -->
+  <link rel="stylesheet" href="index.css">
 
-    <!--====== Bootstrap css ======-->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-
-    <!--====== Line Icons css ======-->
-    <link rel="stylesheet" href="assets/css/LineIcons.css">
-
-    <!--====== Magnific Popup css ======-->
-    <link rel="stylesheet" href="assets/css/magnific-popup.css">
-
-    <!--====== Default css ======-->
-    <link rel="stylesheet" href="assets/css/default.css">
-
-    <!--====== Style css ======-->
-    <link rel="stylesheet" href="assets/css/style.css">
-
-
+  <title>Demo1</title>
 </head>
 
 <body>
 
-    <!--====== PRELOADER PART START ======-->
+  <!---------------head--------------->
+  <div class="container-fluid">
+    <div class="row">
+      
+      <div class="head_banner">
 
-    <div class="preloader">
-        <div class="loader_34">
-            <div class="ytp-spinner">
-                <div class="ytp-spinner-container">
-                    <div class="ytp-spinner-rotator">
-                        <div class="ytp-spinner-left">
-                            <div class="ytp-spinner-circle"></div>
-                        </div>
-                        <div class="ytp-spinner-right">
-                            <div class="ytp-spinner-circle"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="head_discript">
+          <div class="head_title h3">靜一下 品嘗生活</div>
+          <p>我們每天都要過生活，但過的好才是重要的事</p>
         </div>
+      
+        <div class="photo">
+          <img src="/images/photo.jpg" alt="" style="width: 100%;border-radius: 80px;">
+        </div>
+      
+      
+      </div>
+
+      
+
+
+    </div>
+  </div>
+
+  <script>
+    $(document).ready(function () {
+      $(".head_discript").fadeIn(1000);
+    });
+
+  </script>
+  <!---------------head--------------->
+
+
+
+
+
+
+
+  <!---------------nav--------------->
+  <div class="nav">
+    <button class="nav_bt_open">
+      <img src="/images/menu.png" alt="" style="width: 100%;">
+    </button>
+
+    <div class="nav_panel">
+      <button class="nav_bt_close">
+        <img src="/images/close.png" alt="" style="width: 100%;">
+      </button>
+
+
+
     </div>
 
-    <!--====== PRELOADER ENDS START ======-->
+    <script>
+      $(document).ready(function () {
+        $(".nav_panel").hide();
+      });
 
-    <!--====== HEADER PART START ======-->
+    </script>
 
-    <header id="home" class="header-area">
-        <div class="navigation fixed-top">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <nav class="navbar navbar-expand-lg">
-                            <a class="navbar-brand" href="index.html">
-                                <!-- 修改  <img src="assets/images/logo.png" alt="Logo"> -->
-                                <h3>Chien Hung</h3>
-                            </a> <!-- Logo -->
-                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="toggler-icon"></span>
-                                <span class="toggler-icon"></span>
-                                <span class="toggler-icon"></span>
-                            </button>
 
-                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                <ul class="navbar-nav ml-auto">
-                                    <li class="nav-item active"><a class="page-scroll" href="#home">Home</a></li>
-                                    <li class="nav-item"><a class="page-scroll" href="#about">About</a></li>
-                                    <li class="nav-item"><a class="page-scroll" href="#specialty">Specialty</a></li>
-                                    <li class="nav-item"><a class="page-scroll" href="#writing">Writing</a></li>
-                                    <li class="nav-item"><a class="page-scroll" href="#plans">Plans</a></li>
-                                    <li class="nav-item"><a class="page-scroll" href="cs.html">works</a></li>
-                                </ul>
-                            </div> <!-- navbar collapse -->
-                        </nav> <!-- navbar -->
-                    </div>
-                </div> <!-- row -->
-            </div> <!-- container -->
-        </div> <!-- navigation -->
+    <script>
+      $(document).ready(function () {
+        $(".nav_bt_open").click(function () {
+          $(".nav_panel").show(100);
+        });
+      });
+    </script>
+    <script>
+      $(document).ready(function () {
+        $(".nav_bt_close").click(function () {
+          $(".nav_panel").hide(150);
+        });
+      });
+    </script>
 
-        <div id="parallax" class="header-content d-flex align-items-center">
-            <div class="header-shape shape-one layer" data-depth="0.10">
-                <img src="assets/images/banner/shape/shape-1.png" alt="Shape">
-            </div> <!-- header shape -->
-            <div class="header-shape shape-tow layer" data-depth="0.30">
-                <img src="assets/images/banner/shape/shape-2.png" alt="Shape">
-            </div> <!-- header shape -->
-            <div class="header-shape shape-three layer" data-depth="0.40">
-                <img src="assets/images/banner/shape/shape-3.png" alt="Shape">
-            </div> <!-- header shape -->
-            <div class="header-shape shape-fore layer" data-depth="0.60">
-                <img src="assets/images/banner/shape/shape-2.png" alt="Shape">
-            </div> <!-- header shape -->
-            <div class="header-shape shape-five layer" data-depth="0.20">
-                <img src="assets/images/banner/shape/shape-1.png" alt="Shape">
-            </div> <!-- header shape -->
-            <div class="header-shape shape-six layer" data-depth="0.15">
-                <img src="assets/images/banner/shape/shape-4.png" alt="Shape">
-            </div> <!-- header shape -->
-            <div class="header-shape shape-seven layer" data-depth="0.50">
-                <img src="assets/images/banner/shape/shape-5.png" alt="Shape">
-            </div> <!-- header shape -->
-            <div class="header-shape shape-eight layer" data-depth="0.40">
-                <img src="assets/images/banner/shape/shape-3.png" alt="Shape">
-            </div> <!-- header shape -->
-            <div class="header-shape shape-nine layer" data-depth="0.20">
-                <img src="assets/images/banner/shape/shape-6.png" alt="Shape">
-            </div> <!-- header shape -->
-            <div class="header-shape shape-ten layer" data-depth="0.30">
-                <img src="assets/images/banner/shape/shape-3.png" alt="Shape">
-            </div> <!-- header shape -->
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-xl-5 col-lg-6">
-                        <div class="header-content-right">
-                            <h4 class="sub-title">Hello, I’m</h4>
-                            <h1 class="title">YEH ,Chien Hung</h1>
-                            <p>心理學家 / 專案管理 / ERP規劃</p>
-                            <a class="main-btn" href="#work">View my Work</a>
-                        </div> <!-- header content right -->
-                    </div>
-                    <div class="col-lg-6 offset-xl-1">
-                        <div class="header-image d-none d-lg-block">
-                           <!----> <img src="assets/images/Bigphoto.jpg" alt="hero">
-                        </div> <!-- header image -->
-                    </div>
-                </div> <!-- row -->
-            </div> <!-- container -->
-            <div class="header-social">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="header-social-icon">
-                                <ul>
-                                    <li><a href="#"><i class="lni-facebook-filled"></i></a></li>
-                                    <li><a href="#"><i class="lni-twitter-original"></i></a></li>
-                                    <li><a href="#"><i class="lni-behance-original"></i></a></li>
-                                    <li><a href="#"><i class="lni-linkedin-original"></i></a></li>
-                                </ul>
-                            </div> <!-- header social -->
-                        </div>
-                    </div> <!-- row -->
-                </div> <!-- container -->
-            </div> <!-- header social -->
-        </div> <!-- header content -->
-    </header>
 
-    <!--====== HEADER PART ENDS ======-->
+  </div>
 
-    <!--====== ABOUT PART START ======-->
-
-    <section id="about" class="about-area pt-125 pb-130">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="section-title text-center">
-                        <h2 class="title">About Me</h2>
-                        <p></p>
-                    </div> <!-- section title -->
-                </div>
-            </div> <!-- row -->
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="about-content mt-50">
-                        <h5 class="about-title">Hi There! I'm Chien Hung</h5>
-                        <p>本人畢業於正修科技大學資訊管理系，除了程式設計專業外，在專案管理與企業資源規劃也有深入的研究。
-                        <br>
-                        在課餘時間，閱讀人際溝通，心理學相關書籍，期許自己未來能成為更好的人。
-                        </p>
-                        <ul class="clearfix">
-                            <li>
-                                <div class="single-info d-flex align-items-center" style="margin-top: 15px;">
-                                    <div class="info-icon">
-                                        <i class="lni-calendar"></i>
-                                    </div>
-                                    <div class="info-text">
-                                        <p><span>Date of birth:</span> 16 August 1998</p>
-                                    </div>
-                                </div> <!-- single info -->
-                            </li>
-                            <li>
-                                <div class="single-info d-flex align-items-center">
-                                    <div class="info-icon">
-                                        <i class="lni-envelope"></i>
-                                    </div>
-                                    <div class="info-text">
-                                        <p><span>Email:</span> t12776aacs@yahoo.com.tw</p>
-                                    </div>
-                                </div> <!-- single info -->
-                            </li>
-                            
-                        </ul>
-                    </div> <!-- about content -->
-                </div>
-                <div class="col-xl-5 offset-xl-1 col-lg-6">
-                    <div class="about-skills pt-25">
-                        <div class="skill-item mt-25">
-                            <div class="skill-header">
-                                <h6 class="skill-title">JAVA程式設計</h6>
-                                <div class="skill-percentage">
-                                    <div class="count-box counted">
-                                        <span class="counter">80</span>
-                                    </div>
-                                    %
-                                </div>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="bar-inner">
-                                    <div class="bar progress-line" data-width="80"></div>
-                                </div>
-                            </div>
-                        </div> <!-- skill item -->
-                        <div class="skill-item mt-25">
-                            <div class="skill-header">
-                                <h6 class="skill-title">網頁程式設計</h6>
-                                <div class="skill-percentage">
-                                    <div class="count-box counted">
-                                        <span class="counter">85</span>
-                                    </div>
-                                    %
-                                </div>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="bar-inner">
-                                    <div class="bar progress-line" data-width="85"></div>
-                                </div>
-                            </div>
-                        </div> <!-- skill item -->
-                        <div class="skill-item mt-25">
-                            <div class="skill-header">
-                                <h6 class="skill-title">企業資源規劃</h6>
-                                <div class="skill-percentage">
-                                    <div class="count-box counted">
-                                        <span class="counter">78</span>
-                                    </div>
-                                    %
-                                </div>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="bar-inner">
-                                    <div class="bar progress-line" data-width="78"></div>
-                                </div>
-                            </div>
-                        </div> <!-- skill item -->
-                        <div class="skill-item mt-25">
-                            <div class="skill-header">
-                                <h6 class="skill-title">專案管理</h6>
-                                <div class="skill-percentage">
-                                    <div class="count-box counted">
-                                        <span class="counter">85</span>
-                                    </div>
-                                    %
-                                </div>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="bar-inner">
-                                    <div class="bar progress-line" data-width="85"></div>
-                                </div>
-                            </div>
-                        </div> <!-- skill item -->
-                    </div> <!-- about skills -->
-                </div>
-            </div> <!-- row -->
-        </div> <!-- container -->
-    </section>
-
-    <!--====== ABOUT PART ENDS ======-->
-
-    <!--====== SERVICES PART START ======-->
-
-    <section id="specialty" class="services-area gray-bg pt-80 pb-100">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="section-title text-center pb-30">
-                        <h2 class="title">My Specialty</h2>
-                        <p>不斷進步，不斷超越昨天的自己。</p>
-                    </div> <!-- section title -->
-                </div>
-            </div> <!-- row -->
-            <div class="row justify-content-center">
-                <div class="col-lg-4 col-md-8 col-sm-8">
-                    <div class="single-service text-center mt-30">
-                        <div class="service-icon">
-                            <i class="lni-code-alt"></i>
-                        </div>
-                        <div class="service-content">
-                            <h4 class="service-title"><a href="#">Web Design</a></h4>
-                            <p>製作個人一頁式網站</p>
-                        </div>
-                    </div> <!-- single service -->
-                </div>
-                <div class="col-lg-4 col-md-8 col-sm-8">
-                    <div class="single-service text-center mt-30">
-                        <div class="service-icon">
-                            <i class=""><img src="assets/images/ERPshape-1.png" style="width: 60px;height: 60px;"></i>
-                        </div>
-                        <div class="service-content">
-                            <h4 class="service-title"><a href="#">ERP規劃</a></h4>
-                            <p>協助中小企業導入ERP系統</p>
-                        </div>
-                    </div> <!-- single service -->
-                </div>
-                <div class="col-lg-4 col-md-8 col-sm-8">
-                    <div class="single-service text-center mt-30">
-                        <div class="service-icon">
-                            <i class=""><img src="assets/images/projectshape-1.png" style="width: 60px; height: 60px;"></i>
-                        </div>
-                        <div class="service-content">
-                            <h4 class="service-title"><a href="#">專案管理</a></h4>
-                            <p>專案規劃、執行、控制，以達成專案目標</p>
-                        </div>
-                    </div> <!-- single service -->
-                </div>
+  <!---------------nav--------------->
 
 
 
-            </div> <!-- row -->
-        </div> <!-- container -->
-    </section>
-
-    <!--====== SERVICES PART ENDS ======-->
-
-    <!--====== CALL TO ACTION PART START ======-->
-
-    <section id="call-to-action" class="call-to-action pt-125 pb-130 bg_cover" style="background-image: url(assets/images/call-to-action.jpg)">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-xl-8 col-lg-9">
-                    <div class="call-action-content text-center">
-                        <h2 class="action-title">Have any project on mind?</h2>
-                        <p></p>
-                        <ul>
-                            <li><a class="main-btn custom" href="#">download cv</a></li>
-                            <li><a class="main-btn custom-2" href="#">hire me</a></li>
-                        </ul>
-                    </div> <!-- call action content -->
-                </div>
-            </div> <!-- row -->
-        </div> <!-- container -->
-    </section>
-
-    <!--====== CALL TO ACTION PART ENDS ======-->
 
 
-    <!--====== WORK PART START ======-->
 
-    <section id="writing" class="work-area">
-       
 
-        <div class="row">
-           
-               <h3>短文寫作</h3>
-         </div>
+ <!---------------article--------------->
+ <article class="container-fluid">
+<div class="row artrow">
  
  
+  <div class="col-10 col-sm-10 col-md-10 col-lg-10">
+  <p class="art_text">
+    <span class="art_title">&lt;&lt;自愛&nbsp;從靜下來開始&gt;&gt;</span>
+    在現今資訊科技發達的年代，生活步調飛快，我們時常因為忙碌，而忽略了身旁美好的事物。<br>
+    我相信，很多人有跟我一樣的經驗。當失去了一些人事物，或是發生了
+    一些出乎自己意料之外的事，留下遺憾，才驚覺為時已晚。
+    而我在這些年來有不一樣的體悟。我們不管在課業、事業還是感情之外，
+    應該要多為自己留下一些時間，一點點也好，二十分鐘、半小時都好，只要
+    一個禮拜一次。<br><br>
+    留給自己這一點點時間，是為了讓自己的心靈靜一下。這看起來不是甚麼
+    大不了的行為，卻漸漸地影響著我的生活。就好比本人我正面臨要從大學畢業，迎面而來的是我是否要讀研究所，還是要進入職場，工作找到了嗎?這類
+    的問題。即使我已半工半讀多年，有累積了一些工作經驗，但多多少少還是會
+    有些焦慮以及挫折。<br><br>
+    我開始有為自己留些時間的習慣，逼著自己慢下來，靜下來。在這時間裡，
+    讓自己去回想過去一個禮拜，自己做了甚麼、發生甚麼事，我有在前往自己目標
+    的道路上嗎?還是偏移了等等。都在這點時間裡好好整理。讓自己好好聚焦自己的需要或是問題，
+    想想怎麼解決當下的困境，走出難關。<br><br>
+    對我來說，最大的改變是，當我生活上發生了一些事，不管是喜事悲，面臨壓力及焦慮，我都能以較短的時間，調整好自己的身心靈。這正是成長的第一步，我認為這樣我才能
+    在未來的日子裡，為自己的生活品質加分。<br>
+    看到這篇文章的你，不妨可以試試，請相信我，你對你的生活，會感受到更多的幸福感。</p>
+  </div>
+</div>
+ </article>
+
+ <!---------------article--------------->
+
+
+
+
+
+
+
+
+<!---------------section--------------->
+<section class="container-fluid">
+  <div class="row section_row">
+       <div class="col-12 section_col"></div>
+
+
+       <div class="col-5 section_col_text_title">
+        <div class="h1 h1title">CONTACT</div>
+        <div class="info">
+          <ul>
+            <li class="h5">Tel: 123-456-7890</li>
+            <li class="h5">Fax: 123-456-7890</li>
+            <li class="h5">info@mysite.com</li>
+          </ul>
+
+        <div class="social_box">
+      <ul class="social_ul">
+        <li><a href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-instagram social" viewBox="0 0 16 16">
+            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+          </svg>
+        </a></li>
+      
+      
+        <li><a href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-meta social" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M8.217 5.243C9.145 3.988 10.171 3 11.483 3 13.96 3 16 6.153 16.001 9.907c0 2.29-.986 3.725-2.757 3.725-1.543 0-2.395-.866-3.924-3.424l-.667-1.123-.118-.197a54.944 54.944 0 0 0-.53-.877l-1.178 2.08c-1.673 2.925-2.615 3.541-3.923 3.541C1.086 13.632 0 12.217 0 9.973 0 6.388 1.995 3 4.598 3c.319 0 .625.039.924.122.31.086.611.22.913.407.577.359 1.154.915 1.782 1.714Zm1.516 2.224c-.252-.41-.494-.787-.727-1.133L9 6.326c.845-1.305 1.543-1.954 2.372-1.954 1.723 0 3.102 2.537 3.102 5.653 0 1.188-.39 1.877-1.195 1.877-.773 0-1.142-.51-2.61-2.87l-.937-1.565ZM4.846 4.756c.725.1 1.385.634 2.34 2.001A212.13 212.13 0 0 0 5.551 9.3c-1.357 2.126-1.826 2.603-2.581 2.603-.777 0-1.24-.682-1.24-1.9 0-2.602 1.298-5.264 2.846-5.264.091 0 .181.006.27.018Z"/>
+          </svg>
+        </a></li>
+      
+
+        <li><a href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-line social" viewBox="0 0 16 16">
+            <path d="M8 0c4.411 0 8 2.912 8 6.492 0 1.433-.555 2.723-1.715 3.994-1.678 1.932-5.431 4.285-6.285 4.645-.83.35-.734-.197-.696-.413l.003-.018.114-.685c.027-.204.055-.521-.026-.723-.09-.223-.444-.339-.704-.395C2.846 12.39 0 9.701 0 6.492 0 2.912 3.59 0 8 0ZM5.022 7.686H3.497V4.918a.156.156 0 0 0-.155-.156H2.78a.156.156 0 0 0-.156.156v3.486c0 .041.017.08.044.107v.001l.002.002.002.002a.154.154 0 0 0 .108.043h2.242c.086 0 .155-.07.155-.156v-.56a.156.156 0 0 0-.155-.157Zm.791-2.924a.156.156 0 0 0-.156.156v3.486c0 .086.07.155.156.155h.562c.086 0 .155-.07.155-.155V4.918a.156.156 0 0 0-.155-.156h-.562Zm3.863 0a.156.156 0 0 0-.156.156v2.07L7.923 4.832a.17.17 0 0 0-.013-.015v-.001a.139.139 0 0 0-.01-.01l-.003-.003a.092.092 0 0 0-.011-.009h-.001L7.88 4.79l-.003-.002a.029.029 0 0 0-.005-.003l-.008-.005h-.002l-.003-.002-.01-.004-.004-.002a.093.093 0 0 0-.01-.003h-.002l-.003-.001-.009-.002h-.006l-.003-.001h-.004l-.002-.001h-.574a.156.156 0 0 0-.156.155v3.486c0 .086.07.155.156.155h.56c.087 0 .157-.07.157-.155v-2.07l1.6 2.16a.154.154 0 0 0 .039.038l.001.001.01.006.004.002a.066.066 0 0 0 .008.004l.007.003.005.002a.168.168 0 0 0 .01.003h.003a.155.155 0 0 0 .04.006h.56c.087 0 .157-.07.157-.155V4.918a.156.156 0 0 0-.156-.156h-.561Zm3.815.717v-.56a.156.156 0 0 0-.155-.157h-2.242a.155.155 0 0 0-.108.044h-.001l-.001.002-.002.003a.155.155 0 0 0-.044.107v3.486c0 .041.017.08.044.107l.002.003.002.002a.155.155 0 0 0 .108.043h2.242c.086 0 .155-.07.155-.156v-.56a.156.156 0 0 0-.155-.157H11.81v-.589h1.525c.086 0 .155-.07.155-.156v-.56a.156.156 0 0 0-.155-.157H11.81v-.589h1.525c.086 0 .155-.07.155-.156Z"/>
+          </svg>
+        </a></li>
+      
+      </ul>
+        </div>
+
+
+          
+      
+
+
+
+
+        </div>
+
+
+       </div>
+
+      
+      </div>
+</section>
+
+
+
+
+
+<!---------------section--------------->
  
- 
-        <div class="row">
-             <div class="col">
- 
-                 <figure class="text-center" style="margin-top: 50px;">
-                     <blockquote class="blockquote">
-                       <h4>改變是唯一不變的事</h4>
-                     </blockquote>
-                     <figcaption class="blockquote text-left" >
-                      
-                      <p> 人生在世，我們日常會面臨各式各樣繁瑣的事情，這時要如何適時的調整自己是一門
-                       重要的人生課題。<br>
-                       [改變是唯一不變的事]是一個人追求目標的具體實踐。在過程中我們總是會遇到很多的困難與挫折，
-                       阻礙著我們的腳步。然而這些事情是逼迫著我們要去思考，我們到底有沒有足夠的了解自己，掌握自己。<br>
-                       唯有對自己有足夠的認識，認識自己個性的優缺點，找到自己人生的新出口並精進自己，才能讓自己邁向成功之路。
- 
-                         
- 
-                     </p>
- 
-                     </figcaption>
-                   </figure>
- 
-             </div><!-- col -->
-          </div><!-- row -->
- 
-        
- 
-     </section>
- 
-     <!--====== WORK PART ENDS ======-->
-
-
-
-
-    <!--====== CONTACT PART START ======-->
-
-    <section id="plans" class="contact-area pt-90 pb-130 gray-bg">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="section-title text-center pb-25">
-                        <h2 class="title">未來計畫</h2>
-                        <p>將計劃分為短中長期，一步步達成目標。</p>
-                    </div> <!-- section title -->
-                </div>
-            </div> <!-- row -->
-            <div class="row justify-content-center">
-                <div class="col-lg-4 col-md-6 col-sm-7">
-                    <div class="contact-box text-center mt-30">
-                        <div class="contact-icon">
-                           <!-- 原本可插入icon --> 
-                        </div>
-                        <div class="contact-content">
-                            <h6 class="contact-title"><h3>短期計畫</h3></h6>
-                            <p></p>
-                            <ul style="margin-top: 10px;">
-                                <li>增強英語能力</li>
-                                <li>強化統計應用能力</li>
-                                <li>考取屏大教育心理與輔導學系</li>
-                            </ul>
-                        </div>
-                    </div> <!-- contact box -->
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-7">
-                    <div class="contact-box text-center mt-30">
-                        <div class="contact-icon">
-                            <!-- 原本可插入icon -->
-                        </div>
-                        <div class="contact-content">
-                            <h6 class="contact-title"><h3>中期計畫</h3></h6>
-                            <p></p>
-                            <ul style="margin-top: 10px;">
-                                <li>TOEIC 600UP</li>
-                                <li>研讀諮商相關理論與技術</li>
-                                <li>論文撰寫</li>
-                            </ul>
-                        </div>
-                    </div> <!-- contact box -->
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-7">
-                    <div class="contact-box text-center mt-30">
-                        <div class="contact-icon">
-                            <!-- 原本可插入icon -->
-                        </div>
-                        <div class="contact-content">
-                            <h6 class="contact-title"><h3>長期計畫</h3></h6>
-                            <p></p>
-                            <ul style="margin-top: 10px;">
-                                <li>準備考取諮商心理師執照</li>
-                                <li>準備相關公職考試</li>
-                                <li>投入諮商、輔導工作，服務大眾</li>
-                            </ul>
-                        </div>
-                    </div> <!-- contact box -->
-                </div>
-            </div> <!-- row -->
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="contact-form pt-30">
-                        <form id="contact-form" action="assets/contact.php">
-                            <div class="single-form">
-                                <input type="text" name="name" placeholder="Name">
-                            </div> <!-- single form -->
-                            <div class="single-form">
-                                <input type="email" name="email" placeholder="Email">
-                            </div> <!-- single form -->
-                            <div class="single-form">
-                                <textarea name="message" placeholder="Message"></textarea>
-                            </div> <!-- single form -->
-                            <p class="form-message"></p>
-                            <div class="single-form">
-                                <button class="main-btn" type="submit">Send Message</button>
-                            </div> <!-- single form -->
-                        </form>
-                    </div> <!-- contact form -->
-                </div>
-                <div class="col-lg-6">
-                    <div class="contact-map mt-60">
-                        <div class="gmap_canvas">           
-                             <iframe id="gmap_canvas" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3682.075085667231!2d120.34673871418839!3d22.650988935798846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e1ad670a77b39%3A0xd5e63e802beb4dc0!2z5q2j5L-u56eR5oqA5aSn5a24!5e0!3m2!1szh-TW!2stw!4v1645095289313!5m2!1szh-TW!2stw" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-                        </div>
-                    </div> <!-- contact map -->
-                </div>
-            </div> <!-- row -->
-        </div> <!-- container -->
-    </section>
-
-    <!--====== CONTACT PART ENDS ======-->
-
-    <!--====== FOOTER PART START ======-->
-
-    <footer id="footer" class="footer-area">
-        <div class="footer-widget pt-130 pb-130">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-8">
-                        <div class="footer-content text-center">
-                            <a href="index.html">
-                               
-                            </a>
-                            <p class="mt-">活到老學到老。透過每天精進自己，活出自己想要的生活，期許未來自己能夠運用自己的能力幫助他人。</p>
-                            <ul>
-                                <li><a href="#"><i class="lni-facebook-filled"></i></a></li>
-                                <li><a href="#"><i class="lni-twitter-original"></i></a></li>
-                                <li><a href="#"><i class="lni-pinterest"></i></a></li>
-                                <li><a href="#"><i class="lni-linkedin-original"></i></a></li>
-                            </ul>
-                        </div> <!-- footer content -->
-                    </div>
-                </div> <!-- row -->
-            </div> <!-- container -->
-        </div> <!-- footer widget -->
-        <div class="footer-copyright pb-20">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="copyright-text text-center pt-20">
-                            <p>Copyright © 2022. by Chien Hung</a></p>
-                        </div> <!-- copyright text -->
-                    </div>
-                </div> <!-- row -->
-            </div> <!-- container -->
-        </div> <!-- footer widget -->
-    </footer>
-
-    <!--====== FOOTER PART ENDS ======-->
-
-    <!--====== BACK TOP TOP PART START ======-->
-
-    <a href="#" class="back-to-top"><i class="lni-chevron-up"></i></a>
-
-    <!--====== BACK TOP TOP PART ENDS ======-->
 
 
 
@@ -546,36 +218,36 @@
 
 
 
-    <!--====== jquery js ======-->
-    <script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
-    <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
-
-    <!--====== Bootstrap js ======-->
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/popper.min.js"></script>
-
-    <!--====== Magnific Popup js ======-->
-    <script src="assets/js/jquery.magnific-popup.min.js"></script>
-
-    <!--====== Parallax js ======-->
-    <script src="assets/js/parallax.min.js"></script>
-
-    <!--====== Counter Up js ======-->
-    <script src="assets/js/waypoints.min.js"></script>
-    <script src="assets/js/jquery.counterup.min.js"></script>
 
 
-    <!--====== Appear js ======-->
-    <script src="assets/js/jquery.appear.min.js"></script>
-
-    <!--====== Scrolling js ======-->
-    <script src="assets/js/scrolling-nav.js"></script>
-    <script src="assets/js/jquery.easing.min.js"></script>
 
 
-    <!--====== Main js ======-->
-    <script src="assets/js/main.js"></script>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
 </body>
 
 </html>
