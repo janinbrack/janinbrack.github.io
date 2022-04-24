@@ -6,15 +6,15 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!-- jquery cdn -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <!-- jquery cdn -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
 
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-  
+
   <!-- reset -->
   <link rel="stylesheet" href="reset.css">
 
@@ -81,8 +81,16 @@
     <div class="nav_panel">
       <button class="nav_bt_close">
         <img src="/images/close.png" alt="" class="navbt">
+        
       </button>
 
+      <div class="nav_list">
+        <ul>
+          <a href="#"><li>我的簡介</li></a>
+          <a href="#"><li>知心文章</li></a>
+          <a href="#"><li>我的Java</li></a>
+        </ul>
+      </div>
 
 
     </div>
@@ -168,8 +176,8 @@
 
       <div class="col-12 col-sm-12 col-md-10 col-lg-10 section_col_text_title">
         <div class="h1 h1title">CONTACT</div>
-        
-        
+
+
         <div class="info">
           <ul>
             <li class="h5">Tel: 123-456-7890</li>
@@ -207,46 +215,47 @@
 
             </ul>
 
+          </div>
+
+
+          <!-- Button trigger modal -->
+          <button type="button" class="GObt" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            GO
+          </button>
+
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">CONTACT</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                  <form action="gotoinfo">
+                    <input type="text" placeholder="Name or Subject" autocomplete="on" class="infoLayout"><br>
+                    <input type="email" placeholder="Email" class="infoLayout"><br>
+                    <textarea name="" id="" placeholder="Message" cols="30" rows="10" class="infoLayout"></textarea><br>
+
+
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </form>
+
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
       </div>
-
-
-<!-- Button trigger modal -->
-<button type="button" class="GObt" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  GO
-</button>
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">CONTACT</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        
-        <form action="gotoinfo">
-          <input type="text" placeholder="Name or Subject" autocomplete="on" class="infoLayout"><br>
-          <input type="email" placeholder="Email" class="infoLayout"><br>
-          <textarea name="" id="" placeholder="Message" cols="30" rows="10" class="infoLayout"></textarea><br>
-
-
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
-
-      </div>
-      
-       
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
-  </div>
- </div><!-- h1title -->
+    </div><!-- h1title -->
   </section>
 
 
@@ -254,7 +263,7 @@
 
 
 
-  
+
 
 
 
@@ -267,20 +276,102 @@
 
 
   <!---------------introduce--------------->
-<div class="introfuce container-fluid">
-  <div class="row introfuce_row">
+  <div class="introfuce container-fluid">
+    <div class="row introfuce_row">
+
+      <div class="col-10 col-sm-10 col-md-10 col-lg-10 introfuce_col">
+        <p class="h5 introfuce_title">最新文章</p>
+
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header text-align_start" id="headingOne">
+              <button class="btnoneStyle" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                你們的關係是否藏著隱約不散的瘙癢
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+              <div class="accordion-body text-start height_line">
+                一個人在原生家庭中所缺失匱乏的部分，往往會在成年後拼命加倍找回，甚至帶入到戀愛與婚姻中去尋找，我們期待另一半幫自己療癒傷口，好讓自己有安全感，所以對方成為醫治你傷口的醫生，如果做得不好就感覺「你根本不愛我，不重視我」，這種「關係中的焦慮情緒」就是那隱約不散的瘙癢，形成了過敏體質最終如無底洞班，永遠無法滿足的需求，在這樣的生活中，只有疲累、焦慮、害怕、根本感覺不到愛。
+                <br><br>
+                沒有安全感的人，根源於內心深處的不安造成衝突，我們的內在世界這個容器留下的缺口，源自於過往的創傷與後天學習而來的羞恥或恐懼，我們期待另一半用水填滿這個容器幫助我們感覺完整、受到撫慰和感到圓滿。但是水會滲露，於是我們不斷要求更多的水，而水依然不斷地流走…  
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header text-align_start" id="headingTwo">
+              <button class="btnoneStyle collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                別讓分類定義了你
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+              <div class="accordion-body text-start height_line">
+                也許你特別喜愛「獨立」這個特質，所以你時常使用它，一個人住、一個人處理所有事情、一個人去旅行。你給你的「獨立」好多磨練及成長的機會，讓它變成一個很強壯的特質。但與此同時，也許你的「依賴」就沒有機會長大，於是在某些需要依賴別人幫助你的時候，你會不習慣讓別人來幫你，不知道該如何收下別人的好意，甚至是把自己都累壞了卻還停不下來。
+                <br><br>
+                若你能開始看見這些，你就不只是那個「分類」中定義的你，而是可以從中再去選擇「我想不想要繼續這樣？」「除了這樣，我還有什麼可能？」說不定，當你把自己看得越來越透徹，你就可以開始在每個不同的分類中，都或多或少的看見部分的自己。並且能夠嫻熟的在不同的時刻選擇運用不同部分的自己，來讓自己可以優游於生活之中，讓你能更自由、更喜歡自己的模樣。
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header text-align_start" id="headingThree">
+              <button class="btnoneStyle collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                遇見不合理，生氣當然有理
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+              <div class="accordion-body text-start height_line">
+                你上次生氣的時後是什麼時候呢？你生氣的時候家人朋友是否勸你算了啦！這也沒什麼好生氣的還氣那麼久，甚至讓你覺得生氣是一件羞恥的事。我承認自己是一個脾氣不好的人，過去花了許多時間學習如何控制管理自己的情緒，當了心理師後，更常剖析人際溝通的眉眉角角。
+                <br><br>
+                因為心理師的角色，我的情緒被親愛的家人期待刻劃得很深，曾經以為憑藉著自身的專業可以把負面的情緒壓抑下來，加上從小師長的教導面對情緒要隱藏起來，生氣是不對的，諸如此類對於負面情緒一面倒的指責不斷，於是我似乎成了一個很糟的人，因為我怎麼可以生氣發脾氣？我應該忍耐的…..也常為了無法忍一時而懊惱自責。
+                <br><br>
+                一粒米養百樣人，只要有人的地方，難免有衝突不滿，如果心中委屈一再壓抑，反而容易悶出病來，而造成心理健康的危機，我們都想當好人，但，這年頭誰能不生氣？「凡事能忍則忍」、「忍一時風平浪靜」或者「生氣不如爭氣」這些道理我們都知道，但是從知道到做到，可真是一段遙遠的距離啊！與其苛責檢討，不如學會「生對氣」有效抒解壓力，更可以改善溝通。
+                <br><br>
+                我們對於「高情商」的迷思是指不管遇到什麼事情都不會發脾氣的人，其實真正的高情商應該是懂得好好發脾氣、擁抱自己感覺的人，如果生氣這種情緒在演化上沒有好處的話，應該會在物種進化的過程當中被淘汰的，世界上只剩溫和沒有情緒的人，由此可知憤怒與快樂的情緒一樣重要。  
+              </div>
+            </div>
+          </div>
+        </div>
 
 
 
+      </div><!-- introfuce_col -->
+
+
+    </div>
   </div>
-</div>
-<!---------------introduce--------------->
+  <!---------------introduce--------------->
+
+
+
+  <!---------------footer--------------->
+  <footer class="container-fluid">
+   <div class="row footer_row">
+      <div class="col-12 col-sm-12 col-md-6 col-lg-6 foot_left">
+
+            <ul>
+              <a href="#"><li>我的簡介</li></a>
+              <a href="#"><li>知心文章</li></a>
+              <a href="#"><li>我的 Java</li></a>
+            </ul>
+
+
+       
+      </div>
+
+
+
+      <div class="col-12 col-sm-12 col-md-6 col-lg-6 foot_right">
+        <div class="footcopy">
+          2022&nbsp;©&nbsp;COPYRIGHT&nbsp;by&nbsp;Romeo&nbsp;YEH
+        </div>
+      </div>
+
+   </div>
+</footer>
 
 
 
 
-
-
+ <!---------------footer--------------->
 
 
 
