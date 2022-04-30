@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- jquery cdn -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+
+  <!-- reset -->
+  <link rel="stylesheet" href="reset.css">
+
+  <!-- navandfoot.css -->
+  <link rel="stylesheet" href="navandfoot.css">
+
+  <!-- myjavademo.css -->
+  <link rel="stylesheet" href="myjavademo.css">
+
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Noto+Sans+TC:wght@100;300&family=Open+Sans&display=swap"
+    rel="stylesheet">
+
+
+
+  <title>Demo1</title>
+
+
+
+
+
+
+</head>
+
+<body>
+
+<!---------------nav--------------->
+<div class="nav">
+    <button class="nav_bt_open">
+      <img src="/images/menu.png" alt="" class="navbt">
+    </button>
+
+    <div class="nav_panel">
+      <button class="nav_bt_close">
+        <img src="/images/close.png" alt="" class="navbt">
+        
+      </button>
+
+      <div class="nav_list">
+        <ul>
+          <a href="index.html"><li>我的簡介</li></a>
+          <a href="#"><li>知心文章</li></a>
+          <a href="myjavademo.html"><li>我的Java</li></a>
+        </ul>
+      </div>
+
+
+    </div>
+
+    <script>
+      $(document).ready(function () {
+        $(".nav_panel").hide();
+      });
+
+    </script>
+
+
+    <script>
+      $(document).ready(function () {
+        $(".nav_bt_open").click(function () {
+          $(".nav_panel").show(100);
+        });
+      });
+    </script>
+    <script>
+      $(document).ready(function () {
+        $(".nav_bt_close").click(function () {
+          $(".nav_panel").hide(150);
+        });
+      });
+    </script>
+
+
+  </div>
+
+  <!---------------nav--------------->
+
+
+
+
+
+
+<article class="container-fluid article">
+  <div class="row">
+    </div><!-- row -->
+
+     <div class="col-10 col-sm-10 col-md-10 col-lg-10">
+
+        <ul class="list-group">
+           <a href="/demo/oneShop.war"><li class="list-group-item">分頁範例 Pagination</li></a> 
+           <a href=""><li class="list-group-item">more...</li></a> 
+           <a href=""><li class="list-group-item">more...</li></a> 
+          </ul>
+
+
+
+     </div>
+
+
+
+
+
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+  <!---------------footer--------------->
+  <footer class="container-fluid">
+    <div class="row footer_row">
+       <div class="col-12 col-sm-12 col-md-6 col-lg-6 foot_left">
+ 
+             <ul>
+               <a href="#"><li>我的簡介</li></a>
+               <a href="#"><li>知心文章</li></a>
+               <a href="#"><li>我的 Java</li></a>
+             </ul>
+ 
+ 
+        
+       </div>
+ 
+ 
+ 
+       <div class="col-12 col-sm-12 col-md-6 col-lg-6 foot_right">
+         <div class="footcopy">
+           2022&nbsp;©&nbsp;COPYRIGHT&nbsp;by&nbsp;Romeo&nbsp;YEH
+         </div>
+       </div>
+ 
+    </div>
+ </footer>
+ 
+ 
+ 
+ 
+  <!---------------footer--------------->
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   <!-- Optional JavaScript; choose one of the two! -->
+ 
+   <!-- Option 1: Bootstrap Bundle with Popper -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+     crossorigin="anonymous"></script>
+ 
+   <!-- Option 2: Separate Popper and Bootstrap JS -->
+   <!--
+     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+     -->
+ </body>
+ 
+ </html>
