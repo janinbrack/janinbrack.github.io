@@ -4,12 +4,30 @@
      justify-content: center;
 }
 
+
 .list-group-item{
     padding: 25px 30px;
 }
 
-.list-group a{
-text-decoration: none;
-color: #666;
+article a{
+    text-decoration: none;
+ 
 }
 
+
+
+.content{
+    display: none;
+    padding-left: 30px;
+}
+
+
+
+/********/
+.text{
+    line-height: 1.5;
+}
+.foc{
+    margin-left: 10px;
+    color: #666;
+}

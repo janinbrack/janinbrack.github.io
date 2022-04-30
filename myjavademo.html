@@ -107,7 +107,34 @@
      <div class="col-10 col-sm-10 col-md-10 col-lg-10">
 
         <ul class="list-group">
-           <a href="/demo/oneShop.war"><li class="list-group-item">分頁範例 Pagination</li></a> 
+           <li class="list-group-item Pagination_title">分頁範例 Pagination</li> 
+           
+           <div class="content Pagination">
+
+                <div class="h6"><a href="/demo/oneShop.war">Download file</a></div>
+                <div class="text">
+                    View&nbsp;：&nbsp; index.jsp<br>
+                    Controllerl&nbsp;：&nbsp; Product.java<br>
+                    Model&nbsp;：&nbsp; Product / Pages / Article / DataGenerationFactory<br>
+                    Focus：<br>
+                    <ol>
+                        <li class="foc">Article is POJO</li>
+                        <li class="foc">DataGenerationFactory產生文章資料</li>
+                        <li class="foc">Pages 聚合(Aggreation) Article (Pages has a Article。兩類別彼此還是獨立的，不會因為一個消失而另外也會消失。)</li>
+                        <li class="foc">Pages 中的屬性有資料個數與該總頁數，而必須要傳入Article集合物物件來初始化，並推算該屬性資料。</li>
+                        <li class="foc">計算如果每頁顯示三筆資料，那我該顯示多少頁面。pageCount=dataCount%3==0?dataCount/3:(dataCount/3)+1;</li>
+                    </ol>
+
+                </div>
+                 
+
+
+            
+           </div><!-- content -->
+           
+           
+           
+           
            <a href=""><li class="list-group-item">more...</li></a> 
            <a href=""><li class="list-group-item">more...</li></a> 
           </ul>
@@ -122,6 +149,14 @@
 
 </article>
 
+<script>
+$(document).ready(function(){
+  $(".Pagination_title").click(function(){
+    $(".Pagination").slideToggle(500);
+  });
+});
+
+</script>
 
 
 
