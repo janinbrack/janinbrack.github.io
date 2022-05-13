@@ -46,58 +46,56 @@
 
 <!---------------nav--------------->
 <div class="nav">
-    <button class="nav_bt_open">
-      <img src="/images/menu.png" alt="" class="navbt">
+  <button class="nav_bt_open">
+    <img src="/images/menu.png" alt="" class="navbt">
+  </button>
+
+  <div class="nav_panel">
+    <button class="nav_bt_close">
+      <img src="/images/close.png" alt="" class="navbt">
+      
     </button>
 
-    <div class="nav_panel">
-      <button class="nav_bt_close">
-        <img src="/images/close.png" alt="" class="navbt">
-        
-      </button>
-
-      <div class="nav_list">
-        <ul>
-          <a href="index.html"><li>我的簡介</li></a>
-          <a href="#"><li>知心文章</li></a>
-          <a href="myjavademo.html"><li>我的Java</li></a>
-        </ul>
-      </div>
-
-
+    <div class="nav_list">
+      <ul>
+        <a href="index.html"><li>我的簡介</li></a>
+        <a href="#"><li>知心文章</li></a>
+        <a href="crm.html"><li>顧客關係管理</li></a>
+        <a href="psychology.html"><li>心理那些事</li></a>
+        <a href="myjavademo.html"><li>我的Java</li></a>
+      </ul>
     </div>
-
-    <script>
-      $(document).ready(function () {
-        $(".nav_panel").hide();
-      });
-
-    </script>
-
-
-    <script>
-      $(document).ready(function () {
-        $(".nav_bt_open").click(function () {
-          $(".nav_panel").show(100);
-        });
-      });
-    </script>
-    <script>
-      $(document).ready(function () {
-        $(".nav_bt_close").click(function () {
-          $(".nav_panel").hide(150);
-        });
-      });
-    </script>
 
 
   </div>
 
-  <!---------------nav--------------->
+  <script>
+    $(document).ready(function () {
+      $(".nav_panel").hide();
+    });
+
+  </script>
 
 
+  <script>
+    $(document).ready(function () {
+      $(".nav_bt_open").click(function () {
+        $(".nav_panel").show(100);
+      });
+    });
+  </script>
+  <script>
+    $(document).ready(function () {
+      $(".nav_bt_close").click(function () {
+        $(".nav_panel").hide(150);
+      });
+    });
+  </script>
 
 
+</div>
+
+<!---------------nav--------------->
 
 
 <article class="container-fluid article">
