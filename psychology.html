@@ -112,14 +112,73 @@
 
 <div class="col-10 col-sm-10 col-md-3 col-lg-3 art_nav">
   <button class="psybt" id="human_nature">管理學與心理學的八卦</button>
-  <button class="psybt" id="">心理學的研究方法</button>
-  <button class="psybt" id="">人格的一些事情</button>
+  <button class="psybt" id="research">心理學的研究方法</button>
+  <button class="psybt" id="Personality">人格的一些事情</button>
 </div>
 
 
 
 
 <div class="col-10 col-sm-10 col-md-8 col-lg-8 art_articletext">
+
+
+
+  <div class="psyArticle" id="human_nature_txt">
+  <p class="title">管理心理學結合了多種不同領域的知識</p>
+  <p class="txt">
+  
+      心理學 - 研究個體的心理、行為<br>
+      管理學 - 研究組織結構及文化<br>
+      人類學 - 研究不同文化中人類的心理、態度、行為<br>
+      社會學 - 研究個體與個體之間的互動模式及溝通行為<br>
+      政治學 - 研究不同政治環境中個人與群體的心理、態度、行為<br>
+    
+  </p>
+  </div><!-- human_nature_txt -->
+
+
+
+
+
+  <div class="psyArticle" id="research_text">
+    <p class="title">我所知的一些研究方法</p>
+    <p class="txt">
+    調查法<br>
+    觀察法<br>
+    實驗法<br>
+    個案研究法....<br>
+        
+      
+    </p>
+    </div><!-- human_nature_txt -->
+
+
+
+
+
+    <div class="psyArticle" id="Personality_text">
+      <p class="title">人格</p>
+      <p class="txt">
+      定義 : 與眾不同，穩定不變的傾向，也就是個性。而在心理學中稱之為 "人格 "。<br><br>
+       </p>
+      <p class="title">心理學中各不同學派之理論</p>
+
+      <p class="txt">
+      心理分析學派-心理分析論<br>
+      人本學派-自我實現論<br>
+      特質論-五大人格模式<br>
+      </p>
+      </div><!-- human_nature_txt -->
+
+
+
+
+
+
+
+
+
+
 
   
 </div><!-- art_articletext -->
@@ -128,6 +187,50 @@
 </div>
 </article>
 
+
+
+
+<script>
+ $(document).ready(function () {
+            $("#human_nature").click(function () {
+              $(".psyArticle").hide();
+                $("#human_nature_txt").fadeIn();
+            });
+        });
+
+
+
+        $(document).ready(function () {
+            $("#research").click(function () {
+              $(".psyArticle").hide();
+                $("#research_text").fadeIn();
+            });
+        });
+
+
+
+
+        $(document).ready(function () {
+            $("#Personality").click(function () {
+              $(".psyArticle").hide();
+                $("#Personality_text").fadeIn();
+            });
+        });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
 
 
 

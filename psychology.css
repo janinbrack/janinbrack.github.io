@@ -6,15 +6,57 @@
 }
 
 .art_nav{
-    border-right: 1px solid #e0b941;
+    border-right: 1px solid #666;
     display: block;
 }
 
+@media only screen and (max-width:768px) { 
+    .art_nav{
+        border: none;
+        display: block;
+    }
+  }
 
 .psybt{
     padding: 8px 10px;
     border-radius: 5px;
     border: none;
-    background-color: yellowgreen;
+    background-color: #e0b941;
     margin: 10px 3px;
 }
+
+
+
+
+.art_articletext{
+    position: relative;
+}
+
+.psyArticle{
+    position: absolute;
+    left: 50px;
+    display: none;
+    
+}
+
+
+
+
+
+
+
+
+
+/********文章內容設定********/
+.title{
+    font-size: large;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.txt{
+    line-height: 1.5;
+}
+
+
+
